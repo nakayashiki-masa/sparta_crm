@@ -32,6 +32,8 @@ before_action :set_customer, only: [:edit, :show, :update, :destroy ]
   end
 
   def show
+    @comment = Comment.new
+    @comments = @customer.comments
   end
 
   def destroy

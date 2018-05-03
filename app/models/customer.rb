@@ -2,8 +2,6 @@ class Customer < ApplicationRecord
  belongs_to :company
   belongs_to :post
 
- validates :company_id, presence: true
- validates :post_id, presence: true
  validates :family_name, presence: true, length: { maximum: 20 }
  validates :given_name, presence: true, length: { maximum: 20 }
  VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i

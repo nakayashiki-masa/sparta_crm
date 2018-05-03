@@ -3,6 +3,7 @@ ja:
   activerecord:
     models:
       customer: "顧客"
+      comment: "コメント"
     attributes:
       customer:
         family_name: "姓"
@@ -10,8 +11,8 @@ ja:
         email: "メールアドレス"
         company_id: "所属会社"
         post_id: "役職"
-        company: "所属会社"
-        post: "役職"
+      comment:
+        body: "対応内容"
     errors:
       messages:
         record_invalid: "バリデーションに失敗しました: %{errors}"

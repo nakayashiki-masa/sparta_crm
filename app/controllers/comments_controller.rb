@@ -6,7 +6,7 @@ class CommentsController < ApplicationController
       else
         @customer = @comment.customer
         @comments = @customer.comments
-        render templete: "customers/show"
+        render template: "customers/show"
       end
     end
 
